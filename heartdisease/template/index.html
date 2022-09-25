@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heart Disease</title>
+</head>
+<body bgcolor="aqua">
+<div style="...">
+
+<div style="...">
+
+          <h1 style="text-align:center;background:aqua;">Heart Disease Prediction</h1>
+</div>
+    <div>
+    <h2 style="text-align:center;background:aqua;">Enter the ask details </h2>
+    </div>
+
+<div bgcolor="blue" style="">
+    
+<form method="get" action ="{% url 'result' %}"  >
+{% csrf_token %}
+    <div style="background:silver;border-style:solid;border-color:blue;border-width:2px;">
+        Age: <input type="text" required name="age"> <br><br>
+        Sex: <input type="text" required name="sex"> <br><br>
+        Chest Pain(cp): <input type="text" required name="cp"> <br><br>
+        Resting Blood Pressure(trestbps): <input type="text" required name="trestbps"> <br><br>
+        Cholestrol(chol): <input type="text" required name="chol"> <br><br>
+        Fasting Blood Sugar(fbs): <input type="text" required name="fbs"> <br><br>
+        Resting Electrocdiography(restecg): <input type="text" required name="restecg"> <br><br>
+        Maximum Heart Rate Achieved(thalach): <input type="text" required name="thalach"> <br><br>
+        Exercise Incluced Angina(exang): <input type="text" required name="exang"> <br><br>
+        ST Depression Induced by exercise(oldpeak) : <input type="text" required name="oldpeak"> <br><br>
+        Slope of Peak exercise ST segement(slope): <input type="text" required name="slope"> <br><br>
+        Number of Major Vessels(ca): <input type="text" required name="ca"> <br><br>
+        Thailum Stress Result(thal) : <input type="text" required name="thal"> <br><br>
+    </div>
+
+<input type="Submit" value="Predict">
+</form>
+    </div>
+
+
+</div>
+</body>
+</html>
